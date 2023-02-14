@@ -58,6 +58,16 @@ def hacker_notepad(filename, font):
             file.write(text + "\n")
         type_text(font_style + font_color + "TEXT APPENDED TO FILE.\n" + Style.RESET_ALL)
         time.sleep(0.5)
+        
+        if random.random() < 0.1:
+            clear_screen()
+            type_text(font_style + font_color + "HACKING INTO MAINFRAME...\n" + Style.RESET_ALL)
+            time.sleep(2)
+
+        if random.random() < 0.05:
+            clear_screen()
+            type_text(font_style + font_color + "UPDATING VIRUS DATABASE...\n" + Style.RESET_ALL)
+            time.sleep(2)
 
 filename = input("Enter a filename to create or open: ")
 try:
